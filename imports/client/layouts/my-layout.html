@@ -1,0 +1,12 @@
+<template name="my_layout">
+	<div class="bg-red-500 text-black">
+		{{assert this 'app layout has no this'}}
+
+		{{!--
+			This also does not work in FlowRouter since 3.0.3:
+			{{>Template.dynamic template=dynTemplate}}
+		--}}
+
+		{{> yield }}
+	</div>
+</template>
